@@ -1,0 +1,39 @@
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    align-content: center;    
+}
+
+div.live-code {
+    border-radius: 5px;
+    width: 200px;
+    align-items: center;
+    border: 1px solid rgb(128,128,128);
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+.live-dot {
+    height: 7px;
+    width: 7px;    
+    background-color: crimson;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 2px;
+  }
+
+  .notlive-dot {
+    height: 7px;
+    width: 7px;    
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 2px;
+  }
+
+  .live {
+      padding: 5px 0;
+      margin: 0 auto;
+  }
