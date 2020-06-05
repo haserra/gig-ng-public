@@ -1,0 +1,29 @@
+<div class="main-container">
+    <header>
+        <div class="container">
+            <div>
+                <label for="fname">CHARACTER</label>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm text-center">
+                    <input name="weight" type="text" #weight class="form-control" id="weight"
+                        (keyup)="weightConstant($event)" [disabled]="isDisabled" (onfocus)="weight.value = ' '"
+                        (click)="weight.value = ' '" pattern="[a-z]*" [(ngModel)]="inputValue"
+                        [placeholder]="placeholder">
+                </div>
+                <div class="col-sm text-center">
+                    <img src="../../assets/images/clock_new.png" class="img-responsive clock" />
+                </div>
+                <div class="col-sm text-right">
+                    <button type="button" class="btn btn-secondary" (click)="startGenerator()">GENERATE 2D GRID</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <alt-grid [live]="liveStatus" [grid]="grid" [empty]="empty"></alt-grid>
+    </main>
+    <footer>
+        <alt-live [caption]="'YOUR CODE'"></alt-live>
+    </footer>
+</div>

@@ -1,0 +1,22 @@
+<div class="container" *ngIf="live; else notAlive">
+    <div class="row">
+        <div class="col-sm">
+            <div class="generator">
+                <ng-container *ngFor="let item of grid;">
+                    <div *ngFor="let gridItem of item" class="item"> {{gridItem}}</div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #notAlive>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="generator">
+                    <div *ngFor="let item of empty" class="item">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

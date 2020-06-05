@@ -1,0 +1,142 @@
+header, main, section {
+    margin: 20px;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    align-content: center;    
+}
+
+.align-bottom {
+    top: 31px;
+}
+
+.payments {
+    display: grid;
+    grid-gap: 0px; 
+    grid-template-columns: 7fr 1fr 1fr 1fr;
+    background-color: #fff;
+    color: #444;
+    max-width: 850px;
+}
+
+.invalid-feedback {
+    display: inline;
+}
+
+.payments div:first-child {
+    border-top-left-radius: 5px;
+}
+
+.payments div:nth-child(4){
+    border-top-right-radius: 5px;
+}
+
+
+.payments div:nth-last-child(4){
+    border-bottom-left-radius: 5px;
+}
+
+.payments div:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+.payments > div {
+    /* border: 1px solid rgb(220,220,220); */
+    border: 1px solid rgb(128,128,128);
+    border-right: 0px;
+    border-bottom: 0px;
+    text-align: center;
+    padding: 15px 0;   
+}
+
+.payments div:nth-child(4n+4){
+    border-right: 1px solid rgb(128,128,128);
+}
+
+.payments div:nth-last-child(-n+4){
+    border-bottom: 1px solid rgb(128,128,128);
+}
+
+button.save-api {
+    margin-right: -35px;
+    margin-top: 35px;
+}
+
+.payments div:nth-child(4n+1){
+    text-align: left;
+    padding-left: 14px;
+
+}
+
+.payments-modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);    
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 2;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.row {
+    margin-left: 0px;
+}
+
+.em {
+    float: right;
+    color: #e05c65;
+    padding-left: 10px;
+}
+
+.error input {
+    background-color: #e3c3c5;
+}
+
+.error ::-webkit-input-placeholder {
+    color: #999;
+}
+
+.error ::-moz-placeholder {
+    color: #999;
+}
+
+.error :-ms-input-placeholder {
+    color: #999;
+}
+
+@media (min-width: 1200px){
+.container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 880px;
+    }
+}

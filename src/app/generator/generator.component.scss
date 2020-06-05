@@ -1,0 +1,25 @@
+header, main {
+    margin: 20px;
+}
+
+footer {
+    margin: 40px;
+}
+
+img.clock {
+    max-height: 50px;
+}
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    align-content: center;    
+}
+
+
+@media (min-width: 1200px){
+.container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 880px;
+    }
+}
